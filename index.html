@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculatorJS</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="result" disabled>
+        <table>
+            <tr>
+                <td><button onclick="getResult('^')">^</button></td>
+                <td><button onclick="getResult('%')">%</button></td>
+                <td><button onclick="backspace()">&larr;</button></td>
+                <td><button onclick="clearResult()">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getResult('√')">√</button></td>
+                <td><button onclick="getResult('1/')">1/x</button></td>
+                <td><button onclick="square()">x&sup2;</button></td>
+                <td><button onclick="getResult('/')">&#247;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getResult('7')" class="numbers">7</button></td>
+                <td><button onclick="getResult('8')" class="numbers">8</button></td>
+                <td><button onclick="getResult('9')" class="numbers">9</button></td>
+                <td><button onclick="getResult('*')">&times;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getResult('4')" class="numbers">4</button></td>
+                <td><button onclick="getResult('5')" class="numbers">5</button></td>
+                <td><button onclick="getResult('6')" class="numbers">6</button></td>
+                <td><button onclick="getResult('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getResult('1')" class="numbers">1</button></td>
+                <td><button onclick="getResult('2')" class="numbers">2</button></td>
+                <td><button onclick="getResult('3')" class="numbers">3</button></td>
+                <td><button onclick="getResult('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="negate()">+/-</button></td>
+                <td><button onclick="getResult('0')" class="numbers">0</button></td>
+                <td><button onclick="getResult('.')">.</button></td>
+                <td><button onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
