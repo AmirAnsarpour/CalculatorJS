@@ -91,6 +91,7 @@ body {
   }
   #calculator #result {
     background-color: #6b83a5;
+    box-shadow: 0px 0px 10px rgba(107, 131, 165, 0.785);
     width: 86%;
     border-radius: 8px;
     margin: 10px 0px;
@@ -200,6 +201,7 @@ body {
   }
   #calculator #result {
     background-color: #6b83a5;
+    box-shadow: 0px 0px 10px rgba(107, 131, 165, 0.785);
     width: 90%;
     margin: 10px;
     padding: 10px;
