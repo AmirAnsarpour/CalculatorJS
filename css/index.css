@@ -90,14 +90,14 @@ body {
     box-shadow: 0px 0px 10px black;
   }
   #calculator #result {
-    background-color: #6b83a5;
+    background-color: #ddebff;
     box-shadow: 0px 0px 10px rgba(107, 131, 165, 0.785);
     width: 86%;
     border-radius: 8px;
     margin: 10px 0px;
     padding: 10px 10px;
     overflow: hidden;
-    color: white;
+    color: #000000;
     font-size: 25px;
   }
   #calculator table {
