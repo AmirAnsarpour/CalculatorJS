@@ -8,27 +8,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
 
 body {
-    background-color: rgb(13, 17, 23);
+    background-color: rgb(22, 29, 41);
     font-family: 'Konkhmer Sleokchher', cursive;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#animate {
+    position: fixed;
+    background-color: rgb(13, 17, 23);
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    font-size: 70px;
+    z-index: 100;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-weight: 600;
+        margin: auto;
+        animation: load 1000ms infinite 0s ease-in-out;
+        animation-direction: alternate;
+        color: rgb(107, 131, 165);
+        text-shadow: 0 0 10px rgb(13, 17, 23);
+
+        @keyframes load {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                letter-spacing: 2px;
+                opacity: 0.08;
+                filter: blur(3px);
+            }
+        }
+    }
 }
 
 #calculator {
-    margin: auto;
-    width: 250px;
+    position: fixed;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: rgb(6, 13, 24);
+    width: 450px;
     text-align: center;
-    border: 1px solid #000;
-    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px black;
 
     #result {
         background-color: rgb(107, 131, 165);
-        padding: 5px 20px;
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+        overflow: hidden;
         color: black;
-        font-size: 18px;
+        font-size: 25px;
     }
 
     table {
-        margin-top: 10px;
-
         tr {
             td {
                 .numbers {
@@ -40,9 +88,9 @@ body {
                 }
 
                 button {
-                    width: 50px;
-                    height: 50px;
-                    font-size: 20px;
+                    width: 100px;
+                    height: 100px;
+                    font-size: 40px;
                     background-color: rgb(77, 93, 117);
                     border: 1px solid rgb(0, 0, 0);
                     border-radius: 5px;
