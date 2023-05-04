@@ -86,11 +86,13 @@ body {
     width: 90%;
     text-align: center;
     border: 1px solid #000000;
+    border-radius: 8px;
     box-shadow: 0px 0px 10px black;
   }
   #calculator #result {
     background-color: #6b83a5;
     width: 86%;
+    border-radius: 8px;
     margin: 10px 0px;
     padding: 10px 10px;
     overflow: hidden;
@@ -100,6 +102,7 @@ body {
   #calculator table {
     width: 90%;
     margin: auto;
+    padding-bottom: 10px;
   }
   #calculator table tr td {
     width: 25%;
@@ -117,7 +120,7 @@ body {
     color: black;
     background-color: #4d5d75;
     border: 1px solid #000000;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 0px auto;
     cursor: pointer;
     transition: all 100ms ease 0s;
@@ -187,6 +190,7 @@ body {
     position: fixed;
     right: 50%;
     top: 50%;
+    border-radius: 12px;
     transform: translate(50%, -51%);
     background-color: #060d18;
     width: 450px;
@@ -199,6 +203,7 @@ body {
     width: 90%;
     margin: 10px;
     padding: 10px;
+    border-radius: 8px;
     overflow: hidden;
     color: black;
     font-size: 25px;
@@ -215,7 +220,7 @@ body {
     font-size: 40px;
     background-color: #4d5d75;
     border: 1px solid #000000;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 5px;
     cursor: pointer;
     transition: all 100ms ease 0s;
