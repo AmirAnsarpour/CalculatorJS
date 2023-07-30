@@ -42,38 +42,6 @@ body {
   }
 }
 @media all and (max-width: 991.98px) {
-  #animate {
-    position: fixed;
-    background-color: #0d1117;
-    width: 100%;
-    height: 100vh;
-    bottom: 0;
-    left: 0;
-    font-size: 40px;
-    z-index: 100;
-  }
-  #animate div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-weight: 600;
-    margin: auto;
-    animation: load 1000ms infinite 0s ease-in-out;
-    animation-direction: alternate;
-    color: #6b83a5;
-    text-shadow: 0 0 10px #0d1117;
-  }
-  @keyframes load {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      letter-spacing: 2px;
-      opacity: 0.08;
-      filter: blur(3px);
-    }
-  }
   #change-screen {
     display: none;
   }
